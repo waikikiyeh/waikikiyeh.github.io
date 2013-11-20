@@ -5,12 +5,11 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>Blog Archive - My Octopress Blog</title>
+  <title>Notes on JavaScript ID3V2.4 Parser - My Octopress Blog</title>
   <meta name="author" content="Your Name">
 
   
-  <meta name="description" content=" Blog Archive 2013 Notes on JavaScript ID3V2.4 Parser
-Nov 20 2013 posted in JavaScript Recent Posts Notes on JavaScript ID3V2.4 Parser ">
+  <meta name="description" content="In order to learn JavaScript, in addition to reading books I started working on a ID3 parser. I decided to write a ID3 parser initially focusing on &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -19,7 +18,7 @@ Nov 20 2013 posted in JavaScript Recent Posts Notes on JavaScript ID3V2.4 Parser
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://waikikiyeh.github.io/blog/archives">
+  <link rel="canonical" href="http://waikikiyeh.github.io/blog/2013/11/20/notes-on-javascript-id3v2-dot-4-parser">
   <link href="/favicon.png" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <link href="/atom.xml" rel="alternate" title="My Octopress Blog" type="application/atom+xml">
@@ -65,35 +64,99 @@ Nov 20 2013 posted in JavaScript Recent Posts Notes on JavaScript ID3V2.4 Parser
   <div id="main">
     <div id="content">
       <div>
-<article role="article">
+<article class="hentry" role="article">
   
   <header>
-    <h1 class="entry-title">Blog Archive</h1>
+    
+      <h1 class="entry-title">Notes on JavaScript ID3V2.4 Parser</h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-11-20T15:36:25-06:00" pubdate data-updated="true">Nov 20<span>th</span>, 2013</time>
+        
+      </p>
     
   </header>
-  
-  <div id="blog-archives">
 
 
+<div class="entry-content"><p>In order to learn JavaScript, in addition to reading books I started working on a ID3 parser. I decided to write a ID3 parser initially focusing on parsing 2.4 tags. In summary, ID3V2.4 has a 10 byte header followed by 4 bytes of optional extended header with most integers encoded as SynchSave integers. Frames start immediately after header with 10-byte frame header. Frame header is composed of 4 consecutive ISO-8859-1 charaters from A-Z and 0-9 followed by 1 byte of size and 2 bytes of flags. Textual frames all starts with &rsquo;T&#8217; and the byte immediately after frame header indicates string encoding (ISO-8859-1, UTF-16, UTF-16BE, UTF-8).</p>
 
-  
-  <h2>2013</h2>
+<p>ID3V2.4.0 documentations:</p>
 
-<article>
-  
-<h1><a href="/blog/2013/11/20/notes-on-javascript-id3v2-dot-4-parser/">Notes on JavaScript ID3V2.4 Parser</a></h1>
-<time datetime="2013-11-20T15:36:25-06:00" pubdate><span class='month'>Nov</span> <span class='day'>20</span> <span class='year'>2013</span></time>
-
-<footer>
-  <span class="categories">posted in <a class='category' href='/blog/categories/javascript/'>JavaScript</a></span>
-</footer>
+<ul>
+<li><a href="http://id3.org/id3v2.4.0-structure">ID3v2.4.0-structure</a></li>
+<li><a href="http://id3.org/id3v2.4.0-frames">ID3v2.4.0-frames</a></li>
+</ul>
 
 
-</article>
+<p>Existing projects:</p>
+
+<ul>
+<li><a href="https://github.com/43081j/id3">43081j/id3</a></li>
+<li><a href="https://github.com/aadsm/JavaScript-ID3-Reader">JavaScript-ID3-Reader from Opera</a></li>
+<li><a href="http://www.gigamonkeys.com/book/practical-an-id3-parser.html">LISP ID3 parser from &ldquo;Practical Common LISP&rdquo;</a></li>
+</ul>
 
 </div>
 
+
+  <footer>
+    <p class="meta">
+      
   
+
+<span class="byline author vcard">Posted by <span class="fn">Your Name</span></span>
+
+      
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-11-20T15:36:25-06:00" pubdate data-updated="true">Nov 20<span>th</span>, 2013</time>
+      
+
+<span class="categories">
+  
+    <a class='category' href='/blog/categories/javascript/'>JavaScript</a>
+  
+</span>
+
+
+    </p>
+    
+      <div class="sharing">
+  
+  <a href="//twitter.com/share" class="twitter-share-button" data-url="http://waikikiyeh.github.io/blog/2013/11/20/notes-on-javascript-id3v2-dot-4-parser/" data-via="" data-counturl="http://waikikiyeh.github.io/blog/2013/11/20/notes-on-javascript-id3v2-dot-4-parser/" >Tweet</a>
+  
+  
+  
+</div>
+
+    
+    <p class="meta">
+      
+      
+    </p>
+  </footer>
 </article>
 
 </div>

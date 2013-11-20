@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[My Octopress Blog]]></title>
-  <link href="http://waikikiyeh.github.io/atom.xml" rel="self"/>
+  <title><![CDATA[Category: JavaScript | My Octopress Blog]]></title>
+  <link href="http://waikikiyeh.github.io/blog/categories/javascript/atom.xml" rel="self"/>
   <link href="http://waikikiyeh.github.io/"/>
   <updated>2013-11-20T16:10:28-06:00</updated>
   <id>http://waikikiyeh.github.io/</id>
@@ -18,7 +18,7 @@
     <link href="http://waikikiyeh.github.io/blog/2013/11/20/notes-on-javascript-id3v2-dot-4-parser/"/>
     <updated>2013-11-20T15:36:25-06:00</updated>
     <id>http://waikikiyeh.github.io/blog/2013/11/20/notes-on-javascript-id3v2-dot-4-parser</id>
-    <content type="html"><![CDATA[<p>In order to learn JavaScript, in addition to reading books I started working on a ID3 parser. I decided to write a ID3 parser initially focusing on parsing 2.4 tags. In summary, ID3V2.4 has a 10 byte header followed by 4 bytes of optional extended header with most integers encoded as SynchSave integers. Frames start immediately after header with 10-byte frame header. Frame header is composed of 4 consecutive ISO-8859-1 charaters from A-Z and 0-9 followed by 1 byte of size and 2 bytes of flags. Textual frames all starts with &rsquo;T&#8217; and the byte immediately after frame header indicates string encoding (ISO-8859-1, UTF-16, UTF-16BE, UTF-8).</p>
+    <content type="html"><![CDATA[<p>In order to learn JavaScript, in addition to reading books I started working on a ID3 parser. I decided to write a ID3 parser initially focusing on parsing 2.4 tags. In summary, ID3V2.4 has a 10 byte header followed by 4 bytes of optional extended header with most integers encoded as SynchSave integers. Frames start immediately after header with 10-byte frame header. Frame header is composed of 4 consecutive ISO-8859-1 charaters from A-Z and 0-9 followed by 1 byte of size and 2 bytes of flags. Textual frames all starts with &rsquo;T' and the byte immediately after frame header indicates string encoding (ISO-8859-1, UTF-16, UTF-16BE, UTF-8).</p>
 
 <p>ID3V2.4.0 documentations:</p>
 

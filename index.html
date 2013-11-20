@@ -9,7 +9,7 @@
   <meta name="author" content="Your Name">
 
   
-  <meta name="description" content=" Blog Archives Recent Posts ">
+  <meta name="description" content="In order to learn JavaScript, in addition to reading books I started working on a ID3 parser. I decided to write a ID3 parser initially focusing on &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -66,6 +66,59 @@
       <div class="blog-index">
   
   
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2013/11/20/notes-on-javascript-id3v2-dot-4-parser/">Notes on JavaScript ID3V2.4 Parser</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-11-20T15:36:25-06:00" pubdate data-updated="true">Nov 20<span>th</span>, 2013</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>In order to learn JavaScript, in addition to reading books I started working on a ID3 parser. I decided to write a ID3 parser initially focusing on parsing 2.4 tags. In summary, ID3V2.4 has a 10 byte header followed by 4 bytes of optional extended header with most integers encoded as SynchSave integers. Frames start immediately after header with 10-byte frame header. Frame header is composed of 4 consecutive ISO-8859-1 charaters from A-Z and 0-9 followed by 1 byte of size and 2 bytes of flags. Textual frames all starts with &rsquo;T&#8217; and the byte immediately after frame header indicates string encoding (ISO-8859-1, UTF-16, UTF-16BE, UTF-8).</p>
+
+<p>ID3V2.4.0 documentations:</p>
+
+<ul>
+<li><a href="http://id3.org/id3v2.4.0-structure">ID3v2.4.0-structure</a></li>
+<li><a href="http://id3.org/id3v2.4.0-frames">ID3v2.4.0-frames</a></li>
+</ul>
+
+
+<p>Existing projects:</p>
+
+<ul>
+<li><a href="https://github.com/43081j/id3">43081j/id3</a></li>
+<li><a href="https://github.com/aadsm/JavaScript-ID3-Reader">JavaScript-ID3-Reader from Opera</a></li>
+<li><a href="http://www.gigamonkeys.com/book/practical-an-id3-parser.html">LISP ID3 parser from &ldquo;Practical Common LISP&rdquo;</a></li>
+</ul>
+
+</div>
+  
+  
+
+
+    </article>
+  
   <div class="pagination">
     
     <a href="/blog/archives">Blog Archives</a>
@@ -77,6 +130,10 @@
     <section>
   <h1>Recent Posts</h1>
   <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2013/11/20/notes-on-javascript-id3v2-dot-4-parser/">Notes on JavaScript ID3V2.4 Parser</a>
+      </li>
     
   </ul>
 </section>
